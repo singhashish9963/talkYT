@@ -24,7 +24,7 @@ document.getElementById("askBtn").addEventListener("click", () => {
       const videoId = response?.videoId;
       const question = document.getElementById("question").value;
 
-      fetch("http://localhost:8000/chat", {
+      fetch("https://talkyt-production.up.railway.app/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ video_id: videoId, question }),
